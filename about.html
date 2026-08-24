@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/icon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-180x180.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О компании JIMON GROUP Россия — история, философия, наследие ТКМ</title>
+<meta name="description" content="JIMON GROUP — наследник тысячелетней традиции китайской медицины. История компании, философия У-Син, собственные плантации и научная база.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://jimonrus.ru/about.html">
+<link rel="alternate" hreflang="ru-RU" href="https://jimonrus.ru/about.html" />
+<link rel="alternate" hreflang="ru-KZ" href="https://jimongroup.kz/about.html" />
+<link rel="alternate" hreflang="kk-KZ" href="https://jimongroup.kz/kz/about.html" />
+<link rel="alternate" hreflang="ky-KG" href="https://jimongroup.kg/about.html" />
+<link rel="alternate" hreflang="ru-KG" href="https://jimongroup.kg/ru/about.html" />
+<link rel="alternate" hreflang="x-default" href="https://jimonrus.ru/about.html" />
+
+<style>
+  :root{
+    --ivory:#FAF6EC; --ivory2:#F3EDDA; --paper:#FFFFFF;
+    --green-deep:#16321F; --green:#1F4A30; --green-soft:#3C6B49;
+    --gold:#C9A227; --gold-light:#E3C158;
+    --text:#212B22; --text2:#5B6B5D; --text3:#8A968B;
+    --border: rgba(22,50,31,0.12); --radius:18px; --radius-lg:26px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Manrope',system-ui,-apple-system,sans-serif; background:var(--ivory); color:var(--text); line-height:1.7;}
+  h1,h2{font-family:'Noto Serif SC','Georgia',serif; font-weight:700;}
+
+  nav{position:sticky; top:0; z-index:50; background:rgba(250,246,236,0.95); backdrop-filter:blur(14px); border-bottom:1px solid var(--border); padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;}
+  .nav-logo{display:flex; align-items:center; gap:10px; text-decoration:none;}
+  .nav-logo-badge{width:36px; height:36px; border-radius:9px; background:linear-gradient(160deg,#2a5c39,var(--green-deep)); display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--gold-light); font-weight:700;}
+  .nav-logo-text{font-weight:800; color:var(--green-deep); font-size:1rem;}
+  .back-link{font-size:0.85rem; color:var(--green); text-decoration:none; font-weight:600;}
+  .back-link:hover{color:var(--gold);}
+
+  .header{padding:54px 24px 36px; text-align:center; max-width:720px; margin:0 auto;}
+  .section-tag{display:inline-flex; align-items:center; gap:8px; background:rgba(201,162,39,0.12); color:var(--green); font-size:0.74rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:6px 16px; border-radius:20px; margin-bottom:18px;}
+  .header h1{font-size:clamp(1.8rem,3.8vw,2.5rem); color:var(--green-deep); margin-bottom:14px;}
+  .header p{color:var(--text2); font-size:1rem;}
+
+  .container{max-width:760px; margin:0 auto; padding:0 24px 70px;}
+  section.block{margin-bottom:48px;}
+  .block-tag{font-size:0.74rem; font-weight:700; color:var(--green-soft); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px;}
+  .block-title{font-size:1.5rem; color:var(--green-deep); margin-bottom:14px; font-family:'Noto Serif SC',serif;}
+  .block p{color:var(--text2); font-size:0.96rem; margin-bottom:14px;}
+  .block p strong{color:var(--green-deep);}
+
+  .quote-block{background:linear-gradient(160deg,#1d4129,var(--green-deep)); border-radius:var(--radius-lg); padding:36px; color:var(--ivory); text-align:center; margin:20px 0;}
+  .quote-block p{color:rgba(250,246,236,0.9); font-size:1.1rem; line-height:1.6; font-family:'Noto Serif SC',serif; margin:0;}
+  .quote-block em{color:var(--gold-light); font-style:normal;}
+
+  .timeline{position:relative; padding-left:28px; border-left:2px solid rgba(31,74,48,0.2); margin-top:24px;}
+  .t-item{position:relative; margin-bottom:24px;}
+  .t-item::before{content:''; position:absolute; left:-37px; top:4px; width:12px; height:12px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 3px rgba(201,162,39,0.2);}
+  .t-year{color:var(--gold); font-weight:700; font-size:0.95rem; font-family:'Noto Serif SC',serif;}
+  .t-text{color:var(--text2); font-size:0.9rem;}
+
+  .pillars{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:8px;}
+  .pillar-card{background:var(--paper); border:1px solid var(--border); border-radius:var(--radius); padding:22px;}
+  .pillar-icon{font-size:1.6rem; margin-bottom:10px;}
+  .pillar-title{font-weight:700; color:var(--green-deep); margin-bottom:6px; font-size:0.98rem;}
+  .pillar-desc{font-size:0.86rem; color:var(--text2);}
+
+  .cta-block{text-align:center; margin-top:50px; padding:40px; background:linear-gradient(165deg,#1d4129,var(--green-deep)); border-radius:var(--radius-lg); color:var(--ivory);}
+  .cta-block h2{color:var(--ivory); font-size:1.4rem; margin-bottom:12px;}
+  .btn-primary{display:inline-flex; padding:15px 32px; border-radius:14px; background:linear-gradient(135deg,var(--gold),var(--gold-light)); color:var(--green-deep); font-weight:700; text-decoration:none; border:2px solid var(--green-deep);}
+
+  footer{text-align:center; padding:30px 24px; color:var(--text3); font-size:0.8rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-logo">
+    <div class="nav-logo-badge">鹏</div>
+    <div class="nav-logo-text">JIMON GROUP</div>
+  </a>
+  <a href="/index.html" class="back-link">← На главную</a>
+</nav>
+
+<div class="header">
+  <div class="section-tag">О компании</div>
+  <h1>Не стартап. <em style="color:var(--gold); font-style:normal;">Продолжение традиции.</em></h1>
+  <p>JIMON GROUP не изобретает рецепты — она хранит и продолжает их, объединяя под одной крышей бренды с многовековой историей.</p>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="block-tag">Наследие</div>
+    <div class="block-title">Тысячелетняя традиция, современная компания</div>
+    <p>Традиционной китайской медицине — <strong>более 1000 лет</strong>. Принципы пяти элементов У-Син (Дерево, Огонь, Земля, Металл, Вода) используются в врачебной практике на протяжении тысячелетий, задолго до появления современной фармакологии.</p>
+    <p>JIMON GROUP основана в <strong>1993 году</strong> в Аньго — городе, который в Китае называют «столицей традиционной медицины». Сегодня это группа с промышленной структурой «1+6+1», в которой работает около <strong>2000 сотрудников</strong>. В составе группы — <strong>4 бренда традиционной китайской медицины</strong>, каждый со <strong>столетней историей</strong>, объединяющие около <strong>300 разрешений на лекарства</strong> и <strong>30 национальных патентов</strong> с <strong>11 эксклюзивными продуктами</strong>.</p>
+
+    <div class="quote-block">
+      <p>«Наследование сути, сохранение целостности и инноваций»<br><em>— принцип, на котором строится работа компании</em></p>
+    </div>
+
+    <div class="timeline">
+      <div class="t-item"><div class="t-year">1000+ лет назад</div><div class="t-text">Зарождение принципов традиционной китайской медицины и системы пяти элементов У-Син.</div></div>
+      <div class="t-item"><div class="t-year">100+ лет назад</div><div class="t-text">Основание рецептурных домов, впоследствии вошедших в состав 4 брендов ТКМ группы JIMON.</div></div>
+      <div class="t-item"><div class="t-year">1993</div><div class="t-text">Официальное основание JIMON GROUP в Аньго, провинция Хэбэй — современная промышленная структура «1+6+1».</div></div>
+      <div class="t-item"><div class="t-year">2025</div><div class="t-text">Стратегическое научное партнёрство с Шанхайской суперлабораторией, продукция представлена в Сингапуре, Малайзии и других странах.</div></div>
+      <div class="t-item"><div class="t-year">2026</div><div class="t-text">Официальный запуск партнёрской программы в Казахстане и России.</div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-tag">Наука</div>
+    <div class="block-title">Научная база, а не только традиция</div>
+    <p>JIMON GROUP сотрудничает с <strong>6 крупными научно-исследовательскими учреждениями</strong>, включая Тяньцзиньский университет традиционной китайской медицины и Китайскую академию китайских медицинских наук. На базе группы создан собственный научно-исследовательский институт технологий ТКМ-индустрии провинции Хэбэй.</p>
+    <p>Продукция компании представлена в <strong>Сингапуре, Южной Корее, Японии, Австралии, Канаде, Индонезии, Малайзии и Словакии</strong> — это не локальный бренд, а компания с международным признанием.</p>
+  </section>
+
+  <section class="block">
+    <div class="block-tag">Социальная ответственность</div>
+    <div class="block-title">Вклад, который выходит за пределы бизнеса</div>
+    <p>Компания направила на благотворительность материалы на сумму <strong>более 50 миллионов юаней</strong> и создала более <strong>10 000 акров</strong> плантационных баз традиционной китайской медицины, поддерживая развитие местной экономики в регионах выращивания сырья.</p>
+  </section>
+
+  <section class="block">
+    <div class="block-tag">Производство</div>
+    <div class="block-title">От поля до формулы — без посредников</div>
+    <p>JIMON GROUP располагает <strong>собственными плантациями</strong> лекарственных растений. Это не формальность: контроль качества начинается не на складе готовой продукции, а в почве, где растут компоненты будущих формул.</p>
+    <p>Производство сертифицировано по международным стандартам — подробности и оригиналы документов смотрите на странице <a href="/documentation.html" style="color:var(--green); font-weight:600;">документации</a>.</p>
+  </section>
+
+  <section class="block">
+    <div class="block-tag">Философия</div>
+    <div class="block-title">Почему именно У-Син</div>
+    <p>В отличие от подхода "один симптом — одна таблетка", традиционная китайская медицина смотрит на человека как на систему пяти взаимосвязанных элементов. Когда один из элементов слабеет — это отражается на самочувствии в целом, не точечно.</p>
+    <p>Именно поэтому продукция JIMON GROUP создаётся не как изолированные "лекарства от чего-то", а как поддержка конкретного элемента — почек, печени, сердца — через питание организма тем, что ему действительно не хватает.</p>
+
+    <div class="pillars">
+      <div class="pillar-card"><div class="pillar-icon">🌳</div><div class="pillar-title">Дерево</div><div class="pillar-desc">Печень, эмоциональный баланс, гибкость тела и решений.</div></div>
+      <div class="pillar-card"><div class="pillar-icon">🔥</div><div class="pillar-title">Огонь</div><div class="pillar-desc">Сердце, кровообращение, жизненная энергия.</div></div>
+      <div class="pillar-card"><div class="pillar-icon">⛰️</div><div class="pillar-title">Земля</div><div class="pillar-desc">Селезёнка, пищеварение, усвоение питательных веществ.</div></div>
+      <div class="pillar-card"><div class="pillar-icon">⚙️</div><div class="pillar-title">Металл</div><div class="pillar-desc">Лёгкие, иммунитет, дыхательная система.</div></div>
+      <div class="pillar-card"><div class="pillar-icon">💧</div><div class="pillar-title">Вода</div><div class="pillar-desc">Почки, жизненная сила, основа выносливости.</div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-tag">Технология</div>
+    <div class="block-title">Традиция, усиленная технологией</div>
+    <p>JimonGramm — это приложение с ИИ-консультантом Пэн, которое помогает партнёрам JIMON GROUP применять знания У-Син на практике: вести диалог с клиентом, разбираться в его состоянии и подбирать решения. Подробнее — на странице <a href="/jimongramm.html" style="color:var(--green); font-weight:600;">технологии</a>.</p>
+  </section>
+
+  <div class="cta-block">
+    <h2>Хотите быть частью этой истории?</h2>
+    <p style="color:rgba(250,246,236,0.7); margin-bottom:20px;">Куратор расскажет, как начать путь с JIMON GROUP именно в вашем регионе.</p>
+   <a href="/index.html?openModal=1" class="btn-primary">Стать партнёром →</a>
+  </div>
+</div>
+
+<footer>© 2026 JIMON GROUP · <a href="/index.html" style="color:var(--green);">jimonrus.ru</a><br><a href="/about.html" style="color:var(--green);">О компании</a> · <a href="/catalog.html" style="color:var(--green);">Каталог</a> · <a href="/marketing-plan.html" style="color:var(--green);">Маркетинг-план</a> · <a href="/documentation.html" style="color:var(--green);">Документация</a> · <a href="/privacy.html" style="color:var(--green);">Конфиденциальность</a></footer>
+
+</body>
+</html>

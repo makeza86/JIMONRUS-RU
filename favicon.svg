@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Фон -->
+  <circle cx="50" cy="50" r="50" fill="#060a0e"/>
+
+  <!-- Внешнее свечение -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#4ade80" stroke-width="0.6" stroke-opacity="0.3"/>
+
+  <g filter="url(#glow)">
+    <!-- Правильный инь-янь: белая (зелёная) половина сверху, тёмная снизу -->
+
+    <!-- Полный круг — светлая половина (правая/верхняя) -->
+    <path d="
+      M 50 10
+      A 40 40 0 0 1 50 90
+      A 20 20 0 0 1 50 50
+      A 20 20 0 0 0 50 10
+      Z
+    " fill="#0d2a18"/>
+
+    <!-- Тёмная половина (левая/нижняя) -->
+    <path d="
+      M 50 10
+      A 40 40 0 0 0 50 90
+      A 20 20 0 0 0 50 50
+      A 20 20 0 0 1 50 10
+      Z
+    " fill="#4ade80" fill-opacity="0.85"/>
+
+    <!-- Внешняя обводка круга -->
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#4ade80" stroke-width="2"/>
+
+    <!-- Верхний малый круг (светлый — зелёный) -->
+    <circle cx="50" cy="30" r="10" fill="#4ade80" fill-opacity="0.85"/>
+    <circle cx="50" cy="30" r="10" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+
+    <!-- Нижний малый круг (тёмный) -->
+    <circle cx="50" cy="70" r="10" fill="#0d2a18"/>
+    <circle cx="50" cy="70" r="10" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+
+    <!-- Точка в верхнем круге (тёмная) -->
+    <circle cx="50" cy="30" r="4" fill="#060a0e"/>
+
+    <!-- Точка в нижнем круге (светлая зелёная) -->
+    <circle cx="50" cy="70" r="4" fill="#4ade80"/>
+  </g>
+
+  <!-- Внешнее кольцо с пульсом -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#4ade80" stroke-width="1" stroke-opacity="0.15"/>
+</svg>

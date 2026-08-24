@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+
+User-agent: Yandex
+Allow: /
+Disallow: /privacy.html
+
+Sitemap: https://jimonrus.ru/sitemap.xml
